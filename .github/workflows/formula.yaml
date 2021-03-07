@@ -1,0 +1,22 @@
+name: formula
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - .github/workflows/formula.yaml
+      - '*.rb'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - .github/workflows/formula.yaml
+      - '*.rb'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: 1
+    steps:
+      - run: brew install int128/tap/kubectl-socat
+      - run: brew test kubectl-socat
