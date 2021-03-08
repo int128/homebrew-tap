@@ -18,5 +18,6 @@ jobs:
     env:
       HOMEBREW_NO_AUTO_UPDATE: 1
     steps:
-      - run: brew install int128/tap/kubectl-socat
+      - uses: actions/checkout@v2
+      - run: brew install kubectl-socat.rb
       - run: brew test kubectl-socat
