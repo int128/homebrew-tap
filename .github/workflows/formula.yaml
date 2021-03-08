@@ -19,5 +19,5 @@ jobs:
       HOMEBREW_NO_AUTO_UPDATE: 1
     steps:
       - uses: actions/checkout@v2
-      - run: brew install ./kubectl-socat.rb
+      - run: brew install --formula ./kubectl-socat.rb
       - run: brew test kubectl-socat
