@@ -4,8 +4,8 @@ class KubectlSocat < Formula
   version "v0.1.0"
 
   on_macos do
-    url "https://github.com/int128/kubectl-socat/releases/download/v0.1.0/kubectl-socat_v0.1.0_darwin_amd64.zip"
-    sha256 "295b650da9766fc4e7ccc80201223f2366b800c419cc3bfab804a2d6e87f4cc0"
+    url "https://github.com/int128/kubectl-socat/archive/v0.2.0.tar.gz"
+    sha256 "01e67ae2638e16bd517952a9cc1231d016d14c5e6269fb8028b4e3f03a19b653"
   end
   on_linux do
     url "https://github.com/int128/kubectl-socat/releases/download/v0.1.0/kubectl-socat_v0.1.0_linux_amd64.zip"
