@@ -13,10 +13,10 @@ class KubectlExternalForward < Formula
   end
 
   def install
-    bin.install "kubectl-socat"
+    bin.install "kubectl-external_forward"
   end
 
   test do
-    system "#{bin}/kubectl-socat -h"
+    system "#{bin}/kubectl-external_forward -h"
   end
 end
