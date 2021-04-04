@@ -16,11 +16,15 @@ jobs:
   test:
     strategy:
       matrix:
-        platform: [ubuntu-latest, macos-latest]
+        platform:
+          - ubuntu-latest
+          - macos-latest
+        formula:
+          - kubectl-external-forward
     runs-on: ${{ matrix.platform }}
     env:
       HOMEBREW_NO_AUTO_UPDATE: 1
     steps:
       - uses: actions/checkout@v2
-      - run: brew install --formula ./kubectl-socat.rb
-      - run: brew test kubectl-socat
+      - run: brew install --formula ./${{ matrix.formula }}.rb
+      - run: brew test ${{ matrix.formula }}
