@@ -4,8 +4,8 @@ class KubectlExternalForward < Formula
   version "v0.5.0"
 
   on_macos do
-    url "https://github.com/int128/kubectl-external-forward/releases/download/v0.5.0/kubectl-external_forward_darwin_amd64.zip"
-    sha256 "7fc7ff441a81b0bb6c652ec935a4c3acfb28751dda0510562bcc4808b891a0d6"
+    url "https://github.com/int128/kubectl-external-forward/archive/v0.5.1.tar.gz"
+    sha256 "9703dd41b18c80d74c6eb908cd6797255c4f30521b4c7f160502c2adea4b18d2"
   end
   on_linux do
     url "https://github.com/int128/kubectl-external-forward/releases/download/v0.5.0/kubectl-external_forward_linux_amd64.zip"
